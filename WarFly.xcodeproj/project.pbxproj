@@ -21,6 +21,7 @@
 		6FB8BADD2CEDEE34004E1895 /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB8BADC2CEDEE34004E1895 /* Cloud.swift */; };
 		6FB8BADF2CEDF879004E1895 /* PlayerPlane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB8BADE2CEDF879004E1895 /* PlayerPlane.swift */; };
 		6FB8BAE12CEDF9D8004E1895 /* PlayerPlane.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 6FB8BAE02CEDF9D8004E1895 /* PlayerPlane.atlas */; };
+		6FB8BAE32CEF1820004E1895 /* protocol GameBackgroundSpriteable + Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB8BAE22CEF1820004E1895 /* protocol GameBackgroundSpriteable + Extention.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		6FB8BADC2CEDEE34004E1895 /* Cloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cloud.swift; sourceTree = "<group>"; };
 		6FB8BADE2CEDF879004E1895 /* PlayerPlane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerPlane.swift; sourceTree = "<group>"; };
 		6FB8BAE02CEDF9D8004E1895 /* PlayerPlane.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = PlayerPlane.atlas; sourceTree = "<group>"; };
+		6FB8BAE22CEF1820004E1895 /* protocol GameBackgroundSpriteable + Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "protocol GameBackgroundSpriteable + Extention.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				6FB8BADE2CEDF879004E1895 /* PlayerPlane.swift */,
 				6FB8BADC2CEDEE34004E1895 /* Cloud.swift */,
 				6FB8BADA2CEDE2E2004E1895 /* Island.swift */,
+				6FB8BAE22CEF1820004E1895 /* protocol GameBackgroundSpriteable + Extention.swift */,
 				6FB8BAD82CEDDBEE004E1895 /* Background.swift */,
 				6FB8BAAD2CEDD6C7004E1895 /* GameViewController.swift */,
 				6FB8BAAF2CEDD6C7004E1895 /* Main.storyboard */,
@@ -278,6 +281,7 @@
 				6FB8BAAC2CEDD6C7004E1895 /* GameScene.swift in Sources */,
 				6FB8BAAE2CEDD6C7004E1895 /* GameViewController.swift in Sources */,
 				6FB8BAA62CEDD6C7004E1895 /* AppDelegate.swift in Sources */,
+				6FB8BAE32CEF1820004E1895 /* protocol GameBackgroundSpriteable + Extention.swift in Sources */,
 				6FB8BAD92CEDDBEE004E1895 /* Background.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
