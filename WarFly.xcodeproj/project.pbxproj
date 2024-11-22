@@ -27,6 +27,9 @@
 		6FB8BAEB2CF058D3004E1895 /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB8BAEA2CF058D3004E1895 /* Enemy.swift */; };
 		6FB8BAED2CF05947004E1895 /* Enemy_1.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 6FB8BAEC2CF05947004E1895 /* Enemy_1.atlas */; };
 		6FB8BAF22CF07AD6004E1895 /* Enemy_2.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 6FB8BAF12CF07AD6004E1895 /* Enemy_2.atlas */; };
+		6FB8BAF42CF07EE8004E1895 /* BluePowerUp.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 6FB8BAF32CF07EE8004E1895 /* BluePowerUp.atlas */; };
+		6FB8BAF62CF0851F004E1895 /* BluePowerUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB8BAF52CF0851F004E1895 /* BluePowerUp.swift */; };
+		6FB8BAF82CF0853B004E1895 /* GreenPowerUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB8BAF72CF0853B004E1895 /* GreenPowerUp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +73,9 @@
 		6FB8BAEA2CF058D3004E1895 /* Enemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
 		6FB8BAEC2CF05947004E1895 /* Enemy_1.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Enemy_1.atlas; sourceTree = "<group>"; };
 		6FB8BAF12CF07AD6004E1895 /* Enemy_2.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Enemy_2.atlas; sourceTree = "<group>"; };
+		6FB8BAF32CF07EE8004E1895 /* BluePowerUp.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = BluePowerUp.atlas; sourceTree = "<group>"; };
+		6FB8BAF52CF0851F004E1895 /* BluePowerUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluePowerUp.swift; sourceTree = "<group>"; };
+		6FB8BAF72CF0853B004E1895 /* GreenPowerUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenPowerUp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,13 +132,16 @@
 				6FB8BAEA2CF058D3004E1895 /* Enemy.swift */,
 				6FB8BADC2CEDEE34004E1895 /* Cloud.swift */,
 				6FB8BADA2CEDE2E2004E1895 /* Island.swift */,
+				6FB8BAE42CEF3AE1004E1895 /* PowerUp.swift */,
+				6FB8BAF72CF0853B004E1895 /* GreenPowerUp.swift */,
+				6FB8BAF52CF0851F004E1895 /* BluePowerUp.swift */,
 				6FB8BAE22CEF1820004E1895 /* protocol GameBackgroundSpriteable + Extention.swift */,
 				6FB8BAD82CEDDBEE004E1895 /* Background.swift */,
 				6FB8BAAD2CEDD6C7004E1895 /* GameViewController.swift */,
-				6FB8BAE42CEF3AE1004E1895 /* PowerUp.swift */,
 				6FB8BAAF2CEDD6C7004E1895 /* Main.storyboard */,
 				6FB8BAB22CEDD6C8004E1895 /* Assets.xcassets */,
 				6FB8BAB42CEDD6C8004E1895 /* LaunchScreen.storyboard */,
+				6FB8BAF32CF07EE8004E1895 /* BluePowerUp.atlas */,
 				6FB8BAF12CF07AD6004E1895 /* Enemy_2.atlas */,
 				6FB8BAEC2CF05947004E1895 /* Enemy_1.atlas */,
 				6FB8BAE82CEF4396004E1895 /* GreenPowerUp.atlas */,
@@ -268,6 +277,7 @@
 				6FB8BAE92CEF4396004E1895 /* GreenPowerUp.atlas in Resources */,
 				6FB8BAE12CEDF9D8004E1895 /* PlayerPlane.atlas in Resources */,
 				6FB8BAB32CEDD6C8004E1895 /* Assets.xcassets in Resources */,
+				6FB8BAF42CF07EE8004E1895 /* BluePowerUp.atlas in Resources */,
 				6FB8BAB62CEDD6C8004E1895 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,9 +307,11 @@
 				6FB8BADF2CEDF879004E1895 /* PlayerPlane.swift in Sources */,
 				6FB8BADD2CEDEE34004E1895 /* Cloud.swift in Sources */,
 				6FB8BAAC2CEDD6C7004E1895 /* GameScene.swift in Sources */,
+				6FB8BAF62CF0851F004E1895 /* BluePowerUp.swift in Sources */,
 				6FB8BAAE2CEDD6C7004E1895 /* GameViewController.swift in Sources */,
 				6FB8BAA62CEDD6C7004E1895 /* AppDelegate.swift in Sources */,
 				6FB8BAEB2CF058D3004E1895 /* Enemy.swift in Sources */,
+				6FB8BAF82CF0853B004E1895 /* GreenPowerUp.swift in Sources */,
 				6FB8BAE32CEF1820004E1895 /* protocol GameBackgroundSpriteable + Extention.swift in Sources */,
 				6FB8BAE52CEF3AE1004E1895 /* PowerUp.swift in Sources */,
 				6FB8BAD92CEDDBEE004E1895 /* Background.swift in Sources */,
