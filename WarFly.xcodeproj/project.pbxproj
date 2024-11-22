@@ -1,0 +1,654 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6FB8BAA62CEDD6C7004E1895 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB8BAA52CEDD6C7004E1895 /* AppDelegate.swift */; };
+		6FB8BAAC2CEDD6C7004E1895 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB8BAAB2CEDD6C7004E1895 /* GameScene.swift */; };
+		6FB8BAAE2CEDD6C7004E1895 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB8BAAD2CEDD6C7004E1895 /* GameViewController.swift */; };
+		6FB8BAB12CEDD6C7004E1895 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FB8BAAF2CEDD6C7004E1895 /* Main.storyboard */; };
+		6FB8BAB32CEDD6C8004E1895 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FB8BAB22CEDD6C8004E1895 /* Assets.xcassets */; };
+		6FB8BAB62CEDD6C8004E1895 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FB8BAB42CEDD6C8004E1895 /* LaunchScreen.storyboard */; };
+		6FB8BAC02CEDD6C9004E1895 /* WarFlyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB8BABF2CEDD6C9004E1895 /* WarFlyTests.swift */; };
+		6FB8BACA2CEDD6C9004E1895 /* WarFlyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB8BAC92CEDD6C9004E1895 /* WarFlyUITests.swift */; };
+		6FB8BACC2CEDD6C9004E1895 /* WarFlyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB8BACB2CEDD6C9004E1895 /* WarFlyUITestsLaunchTests.swift */; };
+		6FB8BAD92CEDDBEE004E1895 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB8BAD82CEDDBEE004E1895 /* Background.swift */; };
+		6FB8BADB2CEDE2E2004E1895 /* Island.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB8BADA2CEDE2E2004E1895 /* Island.swift */; };
+		6FB8BADD2CEDEE34004E1895 /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB8BADC2CEDEE34004E1895 /* Cloud.swift */; };
+		6FB8BADF2CEDF879004E1895 /* PlayerPlane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB8BADE2CEDF879004E1895 /* PlayerPlane.swift */; };
+		6FB8BAE12CEDF9D8004E1895 /* PlayerPlane.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 6FB8BAE02CEDF9D8004E1895 /* PlayerPlane.atlas */; };
+		6FB8BAE32CEF1820004E1895 /* protocol GameBackgroundSpriteable + Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB8BAE22CEF1820004E1895 /* protocol GameBackgroundSpriteable + Extention.swift */; };
+		6FB8BAE52CEF3AE1004E1895 /* PowerUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB8BAE42CEF3AE1004E1895 /* PowerUp.swift */; };
+		6FB8BAE92CEF4396004E1895 /* GreenPowerUp.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 6FB8BAE82CEF4396004E1895 /* GreenPowerUp.atlas */; };
+		6FB8BAEB2CF058D3004E1895 /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB8BAEA2CF058D3004E1895 /* Enemy.swift */; };
+		6FB8BAED2CF05947004E1895 /* Enemy_1.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 6FB8BAEC2CF05947004E1895 /* Enemy_1.atlas */; };
+		6FB8BAF22CF07AD6004E1895 /* Enemy_2.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 6FB8BAF12CF07AD6004E1895 /* Enemy_2.atlas */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6FB8BABC2CEDD6C9004E1895 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FB8BA9A2CEDD6C7004E1895 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6FB8BAA12CEDD6C7004E1895;
+			remoteInfo = WarFly;
+		};
+		6FB8BAC62CEDD6C9004E1895 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FB8BA9A2CEDD6C7004E1895 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6FB8BAA12CEDD6C7004E1895;
+			remoteInfo = WarFly;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6FB8BAA22CEDD6C7004E1895 /* WarFly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WarFly.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FB8BAA52CEDD6C7004E1895 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6FB8BAAB2CEDD6C7004E1895 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		6FB8BAAD2CEDD6C7004E1895 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		6FB8BAB02CEDD6C7004E1895 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6FB8BAB22CEDD6C8004E1895 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6FB8BAB52CEDD6C8004E1895 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6FB8BABB2CEDD6C9004E1895 /* WarFlyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WarFlyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FB8BABF2CEDD6C9004E1895 /* WarFlyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarFlyTests.swift; sourceTree = "<group>"; };
+		6FB8BAC52CEDD6C9004E1895 /* WarFlyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WarFlyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FB8BAC92CEDD6C9004E1895 /* WarFlyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarFlyUITests.swift; sourceTree = "<group>"; };
+		6FB8BACB2CEDD6C9004E1895 /* WarFlyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarFlyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6FB8BAD82CEDDBEE004E1895 /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
+		6FB8BADA2CEDE2E2004E1895 /* Island.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Island.swift; sourceTree = "<group>"; };
+		6FB8BADC2CEDEE34004E1895 /* Cloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cloud.swift; sourceTree = "<group>"; };
+		6FB8BADE2CEDF879004E1895 /* PlayerPlane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerPlane.swift; sourceTree = "<group>"; };
+		6FB8BAE02CEDF9D8004E1895 /* PlayerPlane.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = PlayerPlane.atlas; sourceTree = "<group>"; };
+		6FB8BAE22CEF1820004E1895 /* protocol GameBackgroundSpriteable + Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "protocol GameBackgroundSpriteable + Extention.swift"; sourceTree = "<group>"; };
+		6FB8BAE42CEF3AE1004E1895 /* PowerUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerUp.swift; sourceTree = "<group>"; };
+		6FB8BAE82CEF4396004E1895 /* GreenPowerUp.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = GreenPowerUp.atlas; sourceTree = "<group>"; };
+		6FB8BAEA2CF058D3004E1895 /* Enemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
+		6FB8BAEC2CF05947004E1895 /* Enemy_1.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Enemy_1.atlas; sourceTree = "<group>"; };
+		6FB8BAF12CF07AD6004E1895 /* Enemy_2.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Enemy_2.atlas; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6FB8BA9F2CEDD6C7004E1895 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FB8BAB82CEDD6C9004E1895 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FB8BAC22CEDD6C9004E1895 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6FB8BA992CEDD6C7004E1895 = {
+			isa = PBXGroup;
+			children = (
+				6FB8BAA42CEDD6C7004E1895 /* WarFly */,
+				6FB8BABE2CEDD6C9004E1895 /* WarFlyTests */,
+				6FB8BAC82CEDD6C9004E1895 /* WarFlyUITests */,
+				6FB8BAA32CEDD6C7004E1895 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6FB8BAA32CEDD6C7004E1895 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6FB8BAA22CEDD6C7004E1895 /* WarFly.app */,
+				6FB8BABB2CEDD6C9004E1895 /* WarFlyTests.xctest */,
+				6FB8BAC52CEDD6C9004E1895 /* WarFlyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6FB8BAA42CEDD6C7004E1895 /* WarFly */ = {
+			isa = PBXGroup;
+			children = (
+				6FB8BAA52CEDD6C7004E1895 /* AppDelegate.swift */,
+				6FB8BAAB2CEDD6C7004E1895 /* GameScene.swift */,
+				6FB8BADE2CEDF879004E1895 /* PlayerPlane.swift */,
+				6FB8BAEA2CF058D3004E1895 /* Enemy.swift */,
+				6FB8BADC2CEDEE34004E1895 /* Cloud.swift */,
+				6FB8BADA2CEDE2E2004E1895 /* Island.swift */,
+				6FB8BAE22CEF1820004E1895 /* protocol GameBackgroundSpriteable + Extention.swift */,
+				6FB8BAD82CEDDBEE004E1895 /* Background.swift */,
+				6FB8BAAD2CEDD6C7004E1895 /* GameViewController.swift */,
+				6FB8BAE42CEF3AE1004E1895 /* PowerUp.swift */,
+				6FB8BAAF2CEDD6C7004E1895 /* Main.storyboard */,
+				6FB8BAB22CEDD6C8004E1895 /* Assets.xcassets */,
+				6FB8BAB42CEDD6C8004E1895 /* LaunchScreen.storyboard */,
+				6FB8BAF12CF07AD6004E1895 /* Enemy_2.atlas */,
+				6FB8BAEC2CF05947004E1895 /* Enemy_1.atlas */,
+				6FB8BAE82CEF4396004E1895 /* GreenPowerUp.atlas */,
+				6FB8BAE02CEDF9D8004E1895 /* PlayerPlane.atlas */,
+			);
+			path = WarFly;
+			sourceTree = "<group>";
+		};
+		6FB8BABE2CEDD6C9004E1895 /* WarFlyTests */ = {
+			isa = PBXGroup;
+			children = (
+				6FB8BABF2CEDD6C9004E1895 /* WarFlyTests.swift */,
+			);
+			path = WarFlyTests;
+			sourceTree = "<group>";
+		};
+		6FB8BAC82CEDD6C9004E1895 /* WarFlyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6FB8BAC92CEDD6C9004E1895 /* WarFlyUITests.swift */,
+				6FB8BACB2CEDD6C9004E1895 /* WarFlyUITestsLaunchTests.swift */,
+			);
+			path = WarFlyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6FB8BAA12CEDD6C7004E1895 /* WarFly */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FB8BACF2CEDD6C9004E1895 /* Build configuration list for PBXNativeTarget "WarFly" */;
+			buildPhases = (
+				6FB8BA9E2CEDD6C7004E1895 /* Sources */,
+				6FB8BA9F2CEDD6C7004E1895 /* Frameworks */,
+				6FB8BAA02CEDD6C7004E1895 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WarFly;
+			productName = WarFly;
+			productReference = 6FB8BAA22CEDD6C7004E1895 /* WarFly.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6FB8BABA2CEDD6C9004E1895 /* WarFlyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FB8BAD22CEDD6C9004E1895 /* Build configuration list for PBXNativeTarget "WarFlyTests" */;
+			buildPhases = (
+				6FB8BAB72CEDD6C9004E1895 /* Sources */,
+				6FB8BAB82CEDD6C9004E1895 /* Frameworks */,
+				6FB8BAB92CEDD6C9004E1895 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6FB8BABD2CEDD6C9004E1895 /* PBXTargetDependency */,
+			);
+			name = WarFlyTests;
+			productName = WarFlyTests;
+			productReference = 6FB8BABB2CEDD6C9004E1895 /* WarFlyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6FB8BAC42CEDD6C9004E1895 /* WarFlyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FB8BAD52CEDD6C9004E1895 /* Build configuration list for PBXNativeTarget "WarFlyUITests" */;
+			buildPhases = (
+				6FB8BAC12CEDD6C9004E1895 /* Sources */,
+				6FB8BAC22CEDD6C9004E1895 /* Frameworks */,
+				6FB8BAC32CEDD6C9004E1895 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6FB8BAC72CEDD6C9004E1895 /* PBXTargetDependency */,
+			);
+			name = WarFlyUITests;
+			productName = WarFlyUITests;
+			productReference = 6FB8BAC52CEDD6C9004E1895 /* WarFlyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6FB8BA9A2CEDD6C7004E1895 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					6FB8BAA12CEDD6C7004E1895 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					6FB8BABA2CEDD6C9004E1895 = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = 6FB8BAA12CEDD6C7004E1895;
+					};
+					6FB8BAC42CEDD6C9004E1895 = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = 6FB8BAA12CEDD6C7004E1895;
+					};
+				};
+			};
+			buildConfigurationList = 6FB8BA9D2CEDD6C7004E1895 /* Build configuration list for PBXProject "WarFly" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6FB8BA992CEDD6C7004E1895;
+			productRefGroup = 6FB8BAA32CEDD6C7004E1895 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6FB8BAA12CEDD6C7004E1895 /* WarFly */,
+				6FB8BABA2CEDD6C9004E1895 /* WarFlyTests */,
+				6FB8BAC42CEDD6C9004E1895 /* WarFlyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6FB8BAA02CEDD6C7004E1895 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FB8BAF22CF07AD6004E1895 /* Enemy_2.atlas in Resources */,
+				6FB8BAED2CF05947004E1895 /* Enemy_1.atlas in Resources */,
+				6FB8BAB12CEDD6C7004E1895 /* Main.storyboard in Resources */,
+				6FB8BAE92CEF4396004E1895 /* GreenPowerUp.atlas in Resources */,
+				6FB8BAE12CEDF9D8004E1895 /* PlayerPlane.atlas in Resources */,
+				6FB8BAB32CEDD6C8004E1895 /* Assets.xcassets in Resources */,
+				6FB8BAB62CEDD6C8004E1895 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FB8BAB92CEDD6C9004E1895 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FB8BAC32CEDD6C9004E1895 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6FB8BA9E2CEDD6C7004E1895 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FB8BADB2CEDE2E2004E1895 /* Island.swift in Sources */,
+				6FB8BADF2CEDF879004E1895 /* PlayerPlane.swift in Sources */,
+				6FB8BADD2CEDEE34004E1895 /* Cloud.swift in Sources */,
+				6FB8BAAC2CEDD6C7004E1895 /* GameScene.swift in Sources */,
+				6FB8BAAE2CEDD6C7004E1895 /* GameViewController.swift in Sources */,
+				6FB8BAA62CEDD6C7004E1895 /* AppDelegate.swift in Sources */,
+				6FB8BAEB2CF058D3004E1895 /* Enemy.swift in Sources */,
+				6FB8BAE32CEF1820004E1895 /* protocol GameBackgroundSpriteable + Extention.swift in Sources */,
+				6FB8BAE52CEF3AE1004E1895 /* PowerUp.swift in Sources */,
+				6FB8BAD92CEDDBEE004E1895 /* Background.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FB8BAB72CEDD6C9004E1895 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FB8BAC02CEDD6C9004E1895 /* WarFlyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FB8BAC12CEDD6C9004E1895 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FB8BACA2CEDD6C9004E1895 /* WarFlyUITests.swift in Sources */,
+				6FB8BACC2CEDD6C9004E1895 /* WarFlyUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6FB8BABD2CEDD6C9004E1895 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6FB8BAA12CEDD6C7004E1895 /* WarFly */;
+			targetProxy = 6FB8BABC2CEDD6C9004E1895 /* PBXContainerItemProxy */;
+		};
+		6FB8BAC72CEDD6C9004E1895 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6FB8BAA12CEDD6C7004E1895 /* WarFly */;
+			targetProxy = 6FB8BAC62CEDD6C9004E1895 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6FB8BAAF2CEDD6C7004E1895 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6FB8BAB02CEDD6C7004E1895 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6FB8BAB42CEDD6C8004E1895 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6FB8BAB52CEDD6C8004E1895 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6FB8BACD2CEDD6C9004E1895 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6FB8BACE2CEDD6C9004E1895 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6FB8BAD02CEDD6C9004E1895 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 29KVNWH693;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SovaViktorovna.WarFly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6FB8BAD12CEDD6C9004E1895 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 29KVNWH693;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SovaViktorovna.WarFly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6FB8BAD32CEDD6C9004E1895 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 29KVNWH693;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SovaViktorovna.WarFlyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WarFly.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WarFly";
+			};
+			name = Debug;
+		};
+		6FB8BAD42CEDD6C9004E1895 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 29KVNWH693;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SovaViktorovna.WarFlyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WarFly.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WarFly";
+			};
+			name = Release;
+		};
+		6FB8BAD62CEDD6C9004E1895 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 29KVNWH693;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SovaViktorovna.WarFlyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WarFly;
+			};
+			name = Debug;
+		};
+		6FB8BAD72CEDD6C9004E1895 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 29KVNWH693;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SovaViktorovna.WarFlyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WarFly;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6FB8BA9D2CEDD6C7004E1895 /* Build configuration list for PBXProject "WarFly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FB8BACD2CEDD6C9004E1895 /* Debug */,
+				6FB8BACE2CEDD6C9004E1895 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6FB8BACF2CEDD6C9004E1895 /* Build configuration list for PBXNativeTarget "WarFly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FB8BAD02CEDD6C9004E1895 /* Debug */,
+				6FB8BAD12CEDD6C9004E1895 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6FB8BAD22CEDD6C9004E1895 /* Build configuration list for PBXNativeTarget "WarFlyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FB8BAD32CEDD6C9004E1895 /* Debug */,
+				6FB8BAD42CEDD6C9004E1895 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6FB8BAD52CEDD6C9004E1895 /* Build configuration list for PBXNativeTarget "WarFlyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FB8BAD62CEDD6C9004E1895 /* Debug */,
+				6FB8BAD72CEDD6C9004E1895 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6FB8BA9A2CEDD6C7004E1895 /* Project object */;
+}
