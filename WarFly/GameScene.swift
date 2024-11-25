@@ -151,9 +151,24 @@ class GameScene: SKScene{
 
 extension GameScene: SKPhysicsContactDelegate {
     func didBegin(_ contact: SKPhysicsContact) {
-        print("contact detected")
+        
+        let bodyA = contact.bodyA.categoryBitMask
+        let bodyB = contact.bodyB.categoryBitMask
+        let player = BitMaskCategory.player
+        let enemy = BitMaskCategory.enemy
+        let shot = BitMaskCategory.shot
+        let powerUp = BitMaskCategory.powerUp
+        
+        if bodyA == player && bodyB == enemy || bodyA == enemy && bodyB == player {
+            print("enemy vs player")
+        } else if bodyA == player && bodyB == powerUp || bodyA == powerUp && bodyB == player {
+            print("powerUp vs player")
+        } else if bodyA == shot && bodyB == enemy || bodyA == enemy && bodyB == shot {
+            print("shot vs enemy")
+        }
+        
     }
     func didEnd(_ contact: SKPhysicsContact) {
-        <#code#>
+        print("contact detected")
     }
 }
