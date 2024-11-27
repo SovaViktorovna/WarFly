@@ -8,9 +8,9 @@
 import SpriteKit
 import GameplayKit
 
-class GameScene: SKScene {
+class GameScene: ParentScene {
     
-    let sceneManager = SceneManager.shared
+   
     
     fileprivate var player: PlayerPlane!
     fileprivate let hud = HUD()
